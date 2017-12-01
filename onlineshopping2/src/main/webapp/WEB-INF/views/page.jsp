@@ -16,7 +16,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-   <%--  <title>Online Shopping - ${title}</title> --%>
+    <title>Online Shopping - ${title}</title> 
+    <script >
+    window.menu='${title}';
+    
+    </script>
     <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -30,21 +34,42 @@
 
       <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
-
+<!-- Bootstrap Redable Theme-->
+ <link href="${css}/bootstrap-redable-themes.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="${css}/myapp.css" rel="stylesheet">
 
   <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/A778BFE2-C016-9B48-AA5A-DA3D085770F7/main.js" charset="UTF-8"></script></head>
 
   <body>
-
+<div class="wrapper">
     <!-- Navigation -->
+    
+    
     
 <%@include file="./shared/navbar.jsp" %>
     <!-- Page Content -->
+    <div class="content">
+    
+    
+   
     <!-- Loding the Home page -->
-  <%--   <c:if test="${userClickHome==true}"></c:if> --%>
+    <c:if test="${userClickHome==true}"> 
    <%@include file="home.jsp" %>
+  </c:if>
+  <!-- Lod only when user clicks about -->
+   <c:if test="${userClickAbout==true}"> 
+   <%@include file="about.jsp" %>
+  </c:if>
+    <!-- Lod only when user clicks contact -->
+   <c:if test="${userClickContact==true}"> 
+   <%@include file="contact.jsp" %>
+  </c:if>
+  
+   </div>
+  
+  
+  
   
        <!-- Footer contain hear -->
     
@@ -66,7 +91,7 @@
 		
 		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>
-
+</div>
   </body>
 
 </html>

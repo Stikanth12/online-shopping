@@ -2,13 +2,14 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="${contextRoot}/home">Online Shopping</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      <li class="#"><a href="#">Home</a></li>
+      <li id="about"><a href="${contextRoot}/about">About</a></li>
+      <li id="listproducts"><a href="${contextRoot}/listproducts">View Products</a></li>
+      <li id="contact"><a href="${contextRoot}/contact">Contact</a></li>
+      
     </ul>
   </div>
 </nav>

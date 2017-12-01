@@ -1,3 +1,5 @@
+
+
 <div class="col-md-12  thumbnail"
 		style="height: 600px; background-color:; margin-left: 10px; border-radius: 10px">
 		<center>
